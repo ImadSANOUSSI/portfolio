@@ -1,139 +1,100 @@
-# Imad SANOUSSI - Portfolio Website
+# 🌸 Automatic Flower Classification
 
-A modern, responsive portfolio website showcasing the skills, experience, and projects of Imad SANOUSSI, AI Developer & Data Scientist.
+Un système de classification automatique de fleurs utilisant des techniques avancées de Deep Learning et d'Intelligence Artificielle.
 
-## 🚀 Features
+## 🚀 Fonctionnalités
 
-- **Responsive Design**: Fully responsive and mobile-friendly
-- **Modern UI/UX**: Clean, professional design with smooth animations
-- **Interactive Elements**: Hover effects, smooth scrolling, and animated sections
-- **Contact Form**: Functional contact form with validation
-- **Theme Toggle**: Dark/light theme support
-- **Loading Animation**: Professional loading screen
-- **Particle Background**: Animated particles in hero section
-- **Progress Indicator**: Scroll progress bar
+- **Classification CNN** : Modèle de Deep Learning basé sur les réseaux de neurones convolutifs
+- **Embeddings FAISS** : Recherche vectorielle rapide et efficace
+- **Génération LLaMA** : Génération de descriptions via Ollama
+- **Interface interactive** : Notebook Colab prêt à l'emploi
+- **Prétraitement avancé** : Techniques d'augmentation et normalisation des données
 
-## 📁 File Structure
+## 🛠️ Technologies utilisées
 
+- **Deep Learning** : TensorFlow, Keras
+- **Architecture** : CNN (Convolutional Neural Networks)
+- **Vectorisation** : FAISS pour la recherche d'embeddings
+- **Génération de texte** : LLaMA via Ollama
+- **Langage** : Python
+- **Environnement** : Google Colab
+
+## 📱 Démo interactive
+
+**🎯 Testez le projet directement :**
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1PuJZYmd4ug7sSw7iImXk8F7K3b1CQAt2)
+
+## 🚀 Installation locale
+
+### Prérequis
+```bash
+Python 3.8+
+TensorFlow 2.x
+Keras
+FAISS
+Ollama (pour LLaMA)
 ```
-portfolio/
-├── index.html      # Main HTML file
-├── styles.css      # CSS styles and animations
-├── script.js       # JavaScript functionality
-└── README.md       # This file
+
+### Installation
+```bash
+# Cloner le repository
+git clone https://github.com/ImadSANOUSSI/automatic-flower-classification.git
+cd automatic-flower-classification
+
+# Installer les dépendances
+pip install -r requirements.txt
+
+# Installer Ollama (pour LLaMA)
+# Suivez les instructions sur https://ollama.ai/
 ```
 
-## 🛠️ Technologies Used
+## 📊 Architecture du modèle
 
-- **HTML5**: Semantic markup
-- **CSS3**: Modern styling with Flexbox/Grid, animations
-- **JavaScript (ES6+)**: Interactive functionality
-- **Font Awesome**: Icons
-- **Google Fonts**: Inter typography
+Le système utilise une approche hybride :
+1. **CNN** pour l'extraction des caractéristiques visuelles
+2. **FAISS** pour la recherche rapide d'embeddings similaires
+3. **LLaMA** pour la génération de descriptions contextuelles
 
-## 📋 Sections
+## 🎯 Utilisation
 
-1. **Navigation**: Fixed navigation with smooth scrolling
-2. **Hero**: Introduction with call-to-action buttons
-3. **About**: Personal summary and contact information
-4. **Experience**: Professional internships and work history
-5. **Education**: Academic background and achievements
-6. **Projects**: Featured projects with technologies used
-7. **Skills**: Technical skills categorized by domain
-8. **Contact**: Contact form and information
+1. Ouvrez le notebook Colab
+2. Exécutez les cellules dans l'ordre
+3. Téléchargez votre image de fleur
+4. Obtenez la classification et la description
 
-## 🚀 How to Run
+## 📈 Résultats
 
-1. **Local Development**:
-   - Simply open `index.html` in your web browser
-   - Or use a local server (recommended):
-     ```bash
-     # Using Python
-     python -m http.server 8000
-     
-     # Using Node.js
-     npx serve .
-     
-     # Using PHP
-     php -S localhost:8000
-     ```
+- **Précision** : [À compléter après tests]
+- **Temps de réponse** : [À compléter après tests]
+- **Classes supportées** : [À compléter après tests]
 
-2. **Live Server (VS Code)**:
-   - Install "Live Server" extension
-   - Right-click on `index.html` → "Open with Live Server"
+## 🤝 Contribution
 
-## 🌐 Deployment Options
+Les contributions sont les bienvenues ! N'hésitez pas à :
+- Signaler des bugs
+- Proposer des améliorations
+- Ajouter de nouvelles fonctionnalités
 
-### GitHub Pages
-1. Create a new repository on GitHub
-2. Upload these files to the repository
-3. Go to Settings → Pages
-4. Select source: "Deploy from a branch"
-5. Choose "main" branch and "/" folder
-6. Your site will be available at: `https://yourusername.github.io/repository-name`
+## 📝 Licence
 
-### Netlify
-1. Drag and drop the project folder to [Netlify](https://netlify.com)
-2. Your site will be deployed instantly with a custom URL
+Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
-### Vercel
-1. Install Vercel CLI: `npm i -g vercel`
-2. Run `vercel` in the project directory
-3. Follow the deployment prompts
+## 👨‍💻 Auteur
 
-## 📝 Customization
+**Imad SANOUSSI**
+- Master en Ingénierie des Systèmes Intelligents
+- Spécialisé en Machine Learning et IA
+- [GitHub](https://github.com/ImadSANoussi)
+- [LinkedIn](https://www.linkedin.com/in/imad-sanoussi/)
 
-### Personal Information
-Update the following sections in `index.html`:
-- Hero section: Name, title, description
-- About section: Bio and contact details
-- Experience: Work history
-- Education: Academic background
-- Projects: Your projects
-- Skills: Your technical skills
-- Contact: Your contact information
+## 📞 Contact
 
-### Styling
-Modify `styles.css` to change:
-- Colors: Update CSS custom properties
-- Fonts: Change Google Fonts imports
-- Layout: Adjust grid/flexbox properties
-- Animations: Modify keyframes and transitions
-
-### Functionality
-Update `script.js` to:
-- Add new interactive features
-- Modify contact form behavior
-- Change animation effects
-- Add new sections
-
-## 📱 Responsive Breakpoints
-
-- **Desktop**: 1200px and above
-- **Tablet**: 768px - 1199px
-- **Mobile**: Below 768px
-
-## 🎨 Color Palette
-
-- **Primary Blue**: #2563eb
-- **Secondary Yellow**: #fbbf24
-- **Dark Gray**: #1f2937
-- **Light Gray**: #6b7280
-- **Background**: #f9fafb
-
-## 📞 Contact Information
-
-- **Email**: imadsanoussi7@gmail.com
-- **Phone**: +212770835106
-- **Location**: Casablanca, Morocco
-- **GitHub**: [ImadSanoussi](https://github.com/ImadSanoussi)
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
+- Email : imadsanoussi7@gmail.com
+- LinkedIn : [Imad SANOUSSI](https://www.linkedin.com/in/imad-sanoussi/)
 
 ---
 
-**Built with ❤️ by Imad SANOUSSI**
+⭐ **N'oubliez pas de donner une étoile au projet si vous l'aimez !**
+
 
 
